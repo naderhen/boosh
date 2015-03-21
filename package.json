@@ -1,0 +1,16 @@
+{
+  "name": "one",
+  "version": "1.0.0",
+  "description": "Webpack with AngularJS Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app"
+  },
+  "author": "Nader Dabit",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
