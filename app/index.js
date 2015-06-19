@@ -89,10 +89,11 @@ function HomeController($scope, $http, $firebaseArray) {
           label: 'category',
           required: true,
           options: [
-            {name: 'Hotel', value: 'lodgin'},
+            {name: 'Hotel', value: 'lodging'},
             {name: 'Golf', value: 'golf'},
             {name: 'Pub', value: 'beer'},
-            {name: 'Food', value: 'fast-food'}
+            {name: 'Food', value: 'fast-food'},
+            {name: 'Other', value: 'monument'}
           ]
         }
       }
