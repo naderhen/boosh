@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/iojs',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-mapbox',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.1
+3 info using node@v2.3.0
+4 verbose install initial load of /Users/nhendawi/Projects/boosh/package.json
+5 warn package.json one@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/angular/package.json
+7 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/angular-formly/package.json
+8 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/angular-formly-templates-bootstrap/package.json
+9 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/angular-ui-router/package.json
+10 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/angularfire/package.json
+11 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/api-check/package.json
+12 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/bootstrap/package.json
+13 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/firebase/package.json
+14 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/jquery/package.json
+15 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/lodash/package.json
+16 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/webpack/package.json
+17 verbose installManyTop reading scoped package data from /Users/nhendawi/Projects/boosh/node_modules/webpack-dev-server/package.json
+18 verbose readDependencies loading dependencies from /Users/nhendawi/Projects/boosh/package.json
+19 silly cache add args [ 'angular-mapbox', null ]
+20 verbose cache add spec angular-mapbox
+21 silly cache add parsed spec { raw: 'angular-mapbox',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'angular-mapbox',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed angular-mapbox@*
+23 verbose addNamed "*" is a valid semver range for angular-mapbox
+24 silly addNameRange { name: 'angular-mapbox', range: '*', hasData: false }
+25 silly mapToRegistry name angular-mapbox
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/angular-mapbox
+29 verbose addNameRange registry:https://registry.npmjs.org/angular-mapbox not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/angular-mapbox
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 08:25:34
+33 verbose request id d70dea6f873df561
+34 http request GET https://registry.npmjs.org/angular-mapbox
+35 http 404 https://registry.npmjs.org/angular-mapbox
+36 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 verbose headers   'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '51',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Fri, 19 Jun 2015 12:25:35 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-iad2127-IAD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1434716735.011249,VS0,VE58' }
+37 silly get cb [ 404,
+37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly get     'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=0',
+37 silly get     'content-length': '51',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Fri, 19 Jun 2015 12:25:35 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-iad2127-IAD',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1434716735.011249,VS0,VE58' } ]
+38 verbose stack Error: 404 Not Found: angular-mapbox
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+38 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+38 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+38 verbose stack     at emitNone (events.js:72:20)
+39 verbose statusCode 404
+40 verbose pkgid angular-mapbox
+41 verbose cwd /Users/nhendawi/Projects/boosh
+42 error Darwin 14.0.0
+43 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "install" "angular-mapbox" "--save"
+44 error node v2.3.0
+45 error npm  v2.11.1
+46 error code E404
+47 error 404 Not Found: angular-mapbox
+47 error 404
+47 error 404 'angular-mapbox' is not in the npm registry.
+47 error 404 You should bug the author to publish it (or use the name yourself!)
+47 error 404 It was specified as a dependency of 'one'
+47 error 404
+47 error 404 Note that you can also install from a
+47 error 404 tarball, folder, http url, or git url.
+48 verbose exit [ 1, true ]

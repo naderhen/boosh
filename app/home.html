@@ -1,0 +1,19 @@
+<h1>HOME</h1>
+<ul>
+    <li ng-repeat="location in vm.locations">
+        <p>{{ location.name }} <span>{{ location.price | currency:'$' }}</span></p>
+    </li>
+</ul>
+
+<p>Search</p>
+<google-places location="vm.googleLocation"></google-places>
+
+<form ng-if="vm.new_location" ng-submit="vm.submit()" novalidate>
+    <formly-form model="vm.new_location" fields="vm.fields" form="vm.form">
+      <button type="submit" class="btn btn-primary submit-button">Submit</button>
+    </formly-form>
+</form>
+
+<mapbox ng-if="vm.locations" map-id="naderhen.j1lnf104" lat="53.428665" lng="-8.332125" zoom="7">
+  <marker ng-repeat="location in vm.locations" icon="{{location.category}}" lat="{{location.geometry.location.A}}" lng="{{location.geometry.location.F}}"><h1>{{location.name}}</h1></marker>
+</mapbox>
